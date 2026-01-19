@@ -53,12 +53,15 @@ def first_stable_character(s):
     """
     # TODO: Implement your solution here
     res=" "
-    for char in s:
-      if char==char+1:
-        return char
-      else:
-        char+=1
+    
+    for i in range(len(s)-1):
+        if len(s)==1:
+          return None
+        elif s[i]==s[i+1]:
+          return s[i]
+          
     pass
+    
 
 
 if __name__ == "__main__":
