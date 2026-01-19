@@ -52,6 +52,12 @@ def first_stable_character(s):
         None
     """
     # TODO: Implement your solution here
+    res=" "
+    for char in s:
+      if char==char+1:
+        return char
+      else:
+        char+=1
     pass
 
 
